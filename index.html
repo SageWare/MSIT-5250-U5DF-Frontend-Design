@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html  >
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/logo5.png" type="image/x-icon">
+  <meta name="description" content="">
+  
+  
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"></noscript>
+  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=vbD8IR"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=vbD8IR" type="text/css">
+
+  
+  
+  
+</head>
+<body>
+  
+  <div id="MAIN-HTML">    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Apparel Coming Soon Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+
+    <div class="image-container">
+        <div class="left-side">
+            <img src="https://raw.githubusercontent.com/SageWare/MSIT-5250-U5DF-Frontend-Design/refs/heads/main/assets/images/bg-pattern-desktop.svg" alt="Background Pattern">
+            <div class="overlay-content">
+                <img src="https://raw.githubusercontent.com/SageWare/MSIT-5250-U5DF-Frontend-Design/refs/heads/main/assets/images/logo.svg" alt="Logo" class="logo">
+                <h1 class="title"><br>WE'RE</h1>
+                <h1 class="title2">COMING<br>SOON</h1>
+                <p class="subtitle">
+                    Hello fellow shoppers! We're currently building our new<br>fashion store. Add your email below to stay up-to-date with<br>announcements and our launch deals.
+                </p>
+                <form id="subscribe-form">
+                    <div class="input-container">
+                        <input type="email" id="email" placeholder="Email Address" required="">
+                        <button type="submit">
+                            <img src="https://raw.githubusercontent.com/SageWare/MSIT-5250-U5DF-Frontend-Design/refs/heads/main/assets/images/icon-arrow.svg" alt="Submit">
+                        </button>
+                    </div>
+                    <p class="error-message">Please provide a valid email.</p>
+                </form>
+            </div>
+        </div>
+        <div class="right-side">
+            <img src="https://raw.githubusercontent.com/SageWare/MSIT-5250-U5DF-Frontend-Design/refs/heads/main/assets/images/hero-desktop.jpg" alt="Hero Image">
+            <script>
+        document.getElementById('subscribe-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const emailInput = document.getElementById('email');
+            const errorMessage = document.querySelector('.error-message');
+            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+            if (!emailInput.value.match(emailPattern)) {
+                errorMessage.style.display = 'block';
+                emailInput.classList.add('input-error');
+            } else {
+                errorMessage.style.display = 'none';
+                emailInput.classList.remove('input-error');
+            }
+        });
+    </script>
+        </div>
+    </div></div>
+
+
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script src="assets/ytplayer/index.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  
+</body>
+</html>
